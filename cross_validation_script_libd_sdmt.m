@@ -5,7 +5,7 @@ cd(pwd);
 
 %% Comment or uncomment the following 3 lines to exactly replicate our results.
 rng('default');
-load('random_state.mat','state');
+load('random_state_sdmt.mat','state');
 rng(state)
 %%%%%%%%%%%%%%%%%%
 
