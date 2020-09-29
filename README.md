@@ -12,7 +12,8 @@ We also use a group sparsity penalty to find a representative set of genetic bas
 We have evaluated our model on a population study of schizophrenia that includes two task fMRI paradigms and single nucleotide polymorphism (SNP) data. 
 
 
-File:
+Files:
+
 cross_validation_script_libd_nback.m, and cross_validation_script_libd_sdmt.m files contains the script to run a cross validation analysis on two differet datasets
 NBack and SDMT obtained from Lieber Institute of Brain Imaging (LIBD). Both the data set contains brain activation maps of ROIs as defined by the brain connectome atlas.
 
