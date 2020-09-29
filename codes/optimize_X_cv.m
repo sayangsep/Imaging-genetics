@@ -5,7 +5,8 @@ function X_hat = optimize_X_cv(F,A,C,G,lambda3)
     
 dim = size(A,1);
 
-t1 = (2*(A*A') + 2*(C*C') + lambda3*eye(dim));
-t2 = ( 2*A*F + 2*C*G);
+t1 = ((A*A') + (C*C') + (lambda3/2)*eye(dim));
+t2 = ( A*F + C*G);
+% X_hat = pinv(t1)*t2;
 X_hat = t1\t2;
 end
