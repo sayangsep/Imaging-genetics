@@ -28,5 +28,26 @@ SDMT Data:
 
 data/sdmt 
 
-This folder contains files of brain activation maps and SNPs data for each subject for the SDMT task. Crosshair file contains brain activation when the subjects are shown crosshair
-and Aversive file contains brain activation when the subjects are shown aversive images. In our analysis we used the contrast maps (Aversive-Crosshair).
+This folder contains files of brain activation maps and SNPs data for each subject for the SDMT task. Crosshair file contains brain activation when the subjects are shown crosshair and Aversive file contains brain activation when the subjects are shown aversive images. In our analysis we used the contrast maps (Aversive-Crosshair).
+
+How to run the analysis:
+
+Both the cross_validation_script_libd_nback.m, and cross_validation_script_libd_sdmt.m  files take in 6 arguments for the following 6 hyperparameters.
+
+lambda1_c =[2.5,5,10,12.5,15,17.5,20,40,80]; % graph regularizer
+
+lambda3_c = 2*[0.15,0.3,0.6,1.2,2.4,4.8]; %l2 regularizer over latent variable. 
+
+lambda2_c = [2.5,5,10,15,20,25,40,80]; % group sparsity regularizer over gene bases.
+
+lambda4_c = 2*[0.015,0.03,0.06,0.12,0.24,0.48]; %l2 regularizer over regression vector. 
+
+For example to replicate our analysis run:
+
+cross_validation_script_libd_sdmt(9,3,4,1,6,1,0) or cross_validation_script_libd_nback(9,3,4,1,6,1,0).
+
+This will choose 
+
+dimension=9, lambda0=2, lambda1 = 10, lambda2 = 15, lambda3 = 0.3, lambda4 = 0.96
+
+
