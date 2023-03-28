@@ -1,6 +1,5 @@
-# Imaging-genetics
 
-# A Generative Discriminative Framework that Integrates Imaging, Genetic, andDiagnosis Data into Coupled Low Dimensional Space
+# [A Generative Discriminative Framework that Integrates Imaging, Genetic, andDiagnosis Data into Coupled Low Dimensional Space](https://www.sciencedirect.com/science/article/pii/S1053811921004778?via%3Dihub)
 
 # Abstract:
 We propose a novel optimization framework that integrates imaging and genetics data for simultaneous biomarker identification and disease classification. 
